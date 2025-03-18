@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../javascript/index.js" defer></script>
+</head>
+<body>
+    <h1 id="headline">Memory</h1>
+    <div class="moves-display">
+        <div class="moves-container">
+            <h2 class="text">Moves:</h2>
+            <h2 class="text" id="move-count">0</h2>
+        </div>
+    </div>
+    <div class="game">
+        <div class="container">
+            <ul class="cards">
+                <li class="card">
+                    <div class="card-back"></div>
+                    <div class="card-front flip">
+                        <img class="card-image"  src="" width="75px" height="75px" style="border-radius: 5px;" />
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-back"></div>
+                    <div class="card-front flip">
+                        <img class="card-image"  src="" width="75px" height="75px" style="border-radius: 5px;" />
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-back"></div>
+                    <div class="card-front flip">
+                        <img class="card-image"  src="" width="75px" height="75px" style="border-radius: 5px;" />
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-back"></div>
+                    <div class="card-front flip">
+                        <img class="card-image"  src="" width="75px" height="75px" style="border-radius: 5px;" />
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-back"></div>
+                    <div class="card-front flip">
+                        <img class="card-image"  src="" width="75px" height="75px" style="border-radius: 5px;" />
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-back"></div>
+                    <div class="card-front flip">
+                        <img class="card-image"  src="" width="75px" height="75px" style="border-radius: 5px;" />
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-back"></div>
+                    <div class="card-front flip">
+                        <img class="card-image"  src="" width="75px" height="75px" style="border-radius: 5px;" />
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-back"></div>
+                    <div class="card-front flip">
+                        <img class="card-image"  src="" width="75px" height="75px" style="border-radius: 5px;" />
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-back"></div>
+                    <div class="card-front flip">
+                        <img class="card-image"  src="" width="75px" height="75px" style="border-radius: 5px;" />
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-back"></div>
+                    <div class="card-front flip">
+                        <img class="card-image"  src="" width="75px" height="75px" style="border-radius: 5px;" />
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-back"></div>
+                    <div class="card-front flip">
+                        <img class="card-image"  src="" width="75px" height="75px" style="border-radius: 5px;" />
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-back"></div>
+                    <div class="card-front flip">
+                        <img class="card-image"  src="" width="75px" height="75px" style="border-radius: 5px;" />
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-back"></div>
+                    <div class="card-front flip">
+                        <img class="card-image"  src="" width="75px" height="75px" style="border-radius: 5px;" />
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-back"></div>
+                    <div class="card-front flip">
+                        <img class="card-image"  src="" width="75px" height="75px" style="border-radius: 5px;" />
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-back"></div>
+                    <div class="card-front flip">
+                        <img class="card-image"  src="" width="75px" height="75px" style="border-radius: 5px;" />
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-back"></div>
+                    <div class="card-front flip">
+                        <img class="card-image"  src="" width="75px" height="75px" style="border-radius: 5px;" />
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="controls">
+        <div class="buttons">
+            <label style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" for="memory-type">Memory type:</label>
+            <select onchange="reset()" name="memory-type" id="types">
+                <option value="food">Food</option>
+                <option value="animals">Animals</option>
+            </select>
+            <button onclick="reset()">Reset</button>
+            <button class="hidden admin" onclick="scramble()">Scramble</button>
+            <button class="hidden admin" onclick="turnAll()">Turn All</button>
+            <button class="hidden admin" onclick="solutions()">Show solution</button>
+            <button class="hidden admin" onclick="test()">Test</button>
+            <label class="hidden admin text" for="homo-mode"> Secret Homo mode:</label>
+            <input class="hidden admin homo-mode-checkbox" type="checkbox" name="homo-mode" id="homo-mode-checkbox">
+            <!-- <button onclick="test()">Test</button> -->
+        </div>
+    </div>
+</body>
+</html>

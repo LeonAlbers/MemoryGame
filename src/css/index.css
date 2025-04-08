@@ -1,161 +1,182 @@
 #headline {
-    display: flex;
-    justify-content: center;
-    text-decoration: underline;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .game {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .text {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .moves-display {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .moves-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    background-color: grey;
-    border-radius: 10px;
-    width: 370px;
-    padding: 0px;
-    margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: grey;
+  border-radius: 10px;
+  width: 370px;
+  padding: 0px;
+  margin-bottom: 5px;
 }
 
 .container {
-    background-color: grey;
-    border-radius: 10px;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    width: fit-content;
-    padding: 20px;
+  background-color: grey;
+  border-radius: 10px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  width: fit-content;
+  padding: 20px;
 }
 
 .cards {
-    display: flex;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    flex-wrap: wrap;
-    gap: 10px;
-    width: 330px;
-    justify-content: center;
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 330px;
+  justify-content: center;
 }
 
 .card {
-    width: 75px;
-    height: 75px;
+  width: 75px;
+  height: 75px;
 }
 
 .card-back {
-    background-color: red;
-    border-radius: 5px;
-    width: 75px;
-    height: 75px;
-    position: absolute;
+  background-color: red;
+  border-radius: 5px;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  cursor: pointer;
 }
 
 .card-front {
-    background-color: green;
-    border-radius: 5px;
-    width: 75px;
-    height: 75px;
-    position: absolute;
+  background-color: green;
+  border-radius: 5px;
+  width: 75px;
+  height: 75px;
+  position: absolute;
 }
 
 .flip {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .buttons {
-    display: flex;
-    justify-content: center;
-    background-color: gray;
-    padding: 20px;
-    border-radius: 10px;
-    gap: 10px;
-    width: 330px;
-    margin-top: 5px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 10px;
+  width: 330px;
+  margin-top: 5px;
+  flex-wrap: wrap;
 }
 
 .controls {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .hidden {
-    visibility: hidden;
-    position: absolute;
+  visibility: hidden;
+  position: absolute;
 }
 
 .correct {
-    box-shadow: 0px 0px 15px lime;
+  box-shadow: 0px 0px 15px lime;
 }
 
 .selected-card {
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px white;
 }
 
 .wrong-shake {
-    animation: wrong-shake 0.25s;
-    border-radius: 10px;
-    box-shadow: -3px 0px 15px red;
+  animation: wrong-shake 0.25s;
+  border-radius: 10px;
+  box-shadow: -3px 0px 15px red;
 }
 
 .right-shake {
-    animation: right-shake 0.25s;
+  animation: right-shake 0.25s;
 }
 
 @keyframes wrong-shake {
-    0% {transform: rotate(0deg);}
-    25% {transform: rotate(3deg);}
-    50% {transform: rotate(0deg);}
-    75% {transform: rotate(-3deg);}
-    100% {transform: rotate(0deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 @keyframes right-shake {
-    0% {transform: translateY(3px);}
-    25% {transform: translateY(-3px);}
-    50% {transform: translateY(2px);}
-    75% {transform: translateY(-2px);}
-    100% {transform: translateY(0px);}
+  0% {
+    transform: translateY(3px);
+  }
+  25% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  75% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 button {
-    background-color: darkgrey;
-    border-radius: 5px;
-    border: solid 1px black;
+  background-color: darkgrey;
+  border-radius: 5px;
+  border: solid 1px black;
 }
 
 button:hover {
-    background-color: gainsboro;
-    transition-duration: 0.25s;
+  background-color: gainsboro;
+  transition-duration: 0.25s;
 }
 
 select {
-    background-color: darkgrey;
-    border-radius: 5px;
-    border: solid 1px black;
+  background-color: darkgrey;
+  border-radius: 5px;
+  border: solid 1px black;
 }
 
 select:hover {
-    background-color: gainsboro;
-    transition-duration: 0.25s;
+  background-color: gainsboro;
+  transition-duration: 0.25s;
 }
 
 .homo-mode {
-    background-image: url('../../resources/homo-background.gif');
-    background-size: cover;
+  background-image: url("../../resources/homo-background.gif");
+  background-size: cover;
 }
